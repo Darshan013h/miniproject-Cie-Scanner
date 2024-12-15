@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Your Website</title>
+    <title>Login | Your Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -11,32 +11,31 @@
     <div class="auth-container">
         <div class="auth-card">
             <div class="auth-header">
-                <h2>Create Account</h2>
-                <p>Please fill in your details</p>
+                <h2>Welcome Back</h2>
+                <p>Please login to your account</p>
             </div>
-            <form id="registerForm" class="auth-form">
+            <form id="loginForm" class="auth-form">
                 <div class="input-group">
                     <i class='bx bxs-user'></i>
-                    <input type="text" id="fullName" placeholder="Full Name" required>
-                </div>
-                <div class="input-group">
-                    <i class='bx bxs-envelope'></i>
                     <input type="email" id="email" placeholder="Email Address" required>
                 </div>
                 <div class="input-group">
                     <i class='bx bxs-lock-alt'></i>
                     <input type="password" id="password" placeholder="Password" required>
                 </div>
-                <div class="input-group">
-                    <i class='bx bxs-lock-alt'></i>
-                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
                 </div>
-                <button type="submit" class="auth-button">Create Account</button>
+                <button type="submit" class="auth-button">Login</button>
                 <p class="auth-redirect">
-                    Already have an account? <a href="login.html">Login</a>
+                    Don't have an account? <a href="register.html">Sign up</a>
                 </p>
             </form>
         </div>
     </div>
 </body>
-</html>
+</html> 
